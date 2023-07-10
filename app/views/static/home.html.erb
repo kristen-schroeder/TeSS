@@ -29,18 +29,25 @@
     <p class="font-size-lg"><%== t 'home.subtitle' %></p>
   </div>
 
-  <%# Big search box %>
-  <div class="searchbox">
-    <%= form_tag search_path, method: :get, role: 'search' do %>
-      <div class="searchbox-wrapper">
-        <input type="text" class="searchbox-field" name="q"
-               placeholder="Search <%= TeSS::Config.site['title_short'] %>..." autofocus="autofocus">
-        <button type="submit" class="searchbox-btn">
-          <i class="icon icon-h3 search-icon"></i>
-        </button>
-      </div>
-    <% end %>
+  <%# Stuff %>
+  <div class="stuff">
+      <h1 class="module-heading"><%== t 'home.newstuff' %></h1>
+      <p class="font-size-lg"><%== t 'home.stufftext' %></p>
   </div>
+
+  <%# What is new %>
+  <div class="whatsnew">
+      <h1 class="module-heading"><%== t 'home.new' %></h1>
+      <p class="font-size-lg"><%== t 'home.newtext' %></p>
+  </div>
+
+  <%# email lists %>
+  <div class="emaillist">
+      <h1 class="module-heading"><%== t 'home.emaillist' %></h1>
+      <p class="font-size-lg"><%== t 'home.emaillisttext' %></p>
+  </div>
+
+
 </section>
 
 <%= render partial: 'static/home/catalogue_blocks' if TeSS::Config.site.dig('home_page', 'catalogue_blocks') %>

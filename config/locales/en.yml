@@ -285,12 +285,28 @@ en:
       events and materials tabs. Alternatively click here:</p>
   home:
     welcome: |
-      How can <span class="text-primary">TeSS</span> help you?
+      Welcome to <span class="text-primary">SciLifeLab Training</span>
     subtitle: |
-      Search the portal for courses, events, videos, presentations, learning pathways, handbooks...<br>
-      All types of resources at all levels for leveraging <span class="text-primary">computational resources in the life sciences</span>.
+      Some text about SciLifeLab Training Hub<br>
+      And what we can help you with
+    newstuff: |
+      New stuff
+    stufftext: |
+      We are currently building here, check back later for exciting things! Meanwhile, check out some of the materials from previous courses here.
+    new: |
+      What's new
+    newtext: |
+      <li>Train-the-Trainer programme</li>
+      <li>Seminars</li>
+      <li>Other cool stuff</li>
+    emaillist: |
+      Email lists
+    emaillisttext: |
+      Interested to know more about our upcoming courses? Sign up to our <b>course newsletter</b>.<br><br>
+      Want to be kept in the loop about training and pedagogy? Sign up to our newsletter for <b>trainers</b>. <br>
+
     catalogue:
-      title: Browse the catalogue
+      title: Upcoming stuff
       link_text: Start browsing
       events: "Discover the latest training events and news from ELIXIR nodes and 3<sup>rd</sup>-party providers."
       materials: "Browse the catalogue of training materials offered by ELIXIR nodes and 3<sup>rd</sup>-party providers."
