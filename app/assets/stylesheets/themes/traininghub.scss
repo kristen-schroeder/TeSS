@@ -104,11 +104,29 @@ $input-border-focus: $secondary-color;
 // Navbar
 $navbar-height: 100px;
 $navbar-default-color: $gray-darker;
-$navbar-default-bg: #E9f2D1;
+$navbar-default-bg: #A7C947;
 $navbar-default-border: transparent;
 $navbar-default-link-color: $gray-darker;
 $navbar-default-link-hover-color: $accent-color;
 $navbar-default-link-active-color: $accent-color;
+
+//header
+header-container {
+  position: relative;
+}
+
+#header-container::before {
+  content: "";
+  background-image: url('/app/assets/images/scilifelab/Fasad-SciLifeLab-Solna-cut.png'); 
+  background-size: 150%;
+  background-position: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 50vh; /* Covers the top half of the #header-container */
+  z-index: -1; /* Puts it behind the content */
+}
 
 
 // Breadcrumb
