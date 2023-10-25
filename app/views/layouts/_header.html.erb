@@ -58,7 +58,7 @@
           directory_tabs, main_tabs = tabs.partition { |t| TeSS::Config.site['directory_tabs']&.include?(t[:feature]) }
         %>
 
-        <%= menu_group(pull: 'left') do %>
+        <%= menu_group(pull: 'right') do %>
           <% main_tabs.each do |t| %>
             <%= menu_item t("features.#{t[:feature]}.short"), t[:link] %>
           <% end %>
