@@ -138,10 +138,11 @@ header-container {
   content: "SciLifeLab Training Portal";
   background-color: white;
   opacity: .8;
-  position: relative;
+  position: absolute;
   top: 20vh;
-  left: -7vw;
-  right: 0vw;
+  left: 50%;
+  transform: translateX(-50%);
+//  right: 0vw;
   width: 100vw;
   height: 10vh; /* Covers the top half of the #header-container */
   z-index: 0; /* Puts it behind the content */
