@@ -156,6 +156,20 @@ header-container {
   font-weight: bold;
 }
 
+text-boxes-container {
+  display: inline-flex;
+ // flex-direction: row; /* Horizontal layout */
+}
+
+.text-box {
+ // flex: 1; /* Each text box takes equal width */
+  padding: 20px; /* Add spacing between text boxes */
+  border: 2px solid #ccc; /* Optional: Add borders for separation */
+  margin: 5px; /* Optional: Add margin around each text box */
+  border-radius: 25px;
+  height: 300px;
+  font-size: 20px;
+}
 
 
 

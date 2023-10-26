@@ -27,6 +27,9 @@ en:
     nodes:
       short: Nodes
       long: Nodes
+    our_resources:
+      short: Resources
+      long: Our Resources
   pundit:
     default: 'You are not authorised to perform this action.'
     material_policy:

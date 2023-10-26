@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   get 'about/developers' => 'about#developers', as: 'developers'
   get 'about/us' => 'about#us', as: 'us'
 
+  # Add resource page
+  get 'our_resources' => 'our_resources#our_resources', as: 'our_resources'
+
   get 'privacy' => 'static#privacy', as: 'privacy'
 
   post 'materials/check_exists' => 'materials#check_exists'
