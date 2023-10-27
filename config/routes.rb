@@ -19,6 +19,9 @@ Rails.application.routes.draw do
 
   # Add resource page
   get 'our_resources' => 'our_resources#our_resources', as: 'our_resources'
+  get 'our_resources/guides' => 'our_resources#guides', as: 'guides'
+  get 'our_resources/pedagogic_support' => 'our_resources#pedagogic_support', as: 'pedagogic'
+  get 'our_resources/course_creation' => 'our_resources#course_creation', as: 'creation'
 
   get 'privacy' => 'static#privacy', as: 'privacy'
 

@@ -5,6 +5,9 @@ class OurResourcesController < ApplicationController
     
     def our_resources
     end
+
+    def guides
+    end
   
   end
   
