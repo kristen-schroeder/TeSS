@@ -17,6 +17,12 @@ Rails.application.routes.draw do
   get 'about/developers' => 'about#developers', as: 'developers'
   get 'about/us' => 'about#us', as: 'us'
 
+  # Add resource page
+  get 'our_resources' => 'our_resources#our_resources', as: 'our_resources'
+  get 'our_resources/guides' => 'our_resources#guides', as: 'guides'
+  get 'our_resources/pedagogic_support' => 'our_resources#pedagogic_support', as: 'pedagogic'
+  get 'our_resources/course_creation' => 'our_resources#course_creation', as: 'creation'
+
   get 'privacy' => 'static#privacy', as: 'privacy'
 
   post 'materials/check_exists' => 'materials#check_exists'
@@ -59,6 +65,7 @@ Rails.application.routes.draw do
   resources :events, concerns: :activities do
     collection do
       get :count
+      get :calendar, format: %i[js html]
     end
     member do
       get :redirect

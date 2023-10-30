@@ -27,6 +27,9 @@ en:
     nodes:
       short: Nodes
       long: Nodes
+    our_resources:
+      short: Resources
+      long: Our Resources
   pundit:
     default: 'You are not authorised to perform this action.'
     material_policy:
@@ -34,7 +37,6 @@ en:
   attributes:
     url: 'URL'
     doi: 'DOI'
-    orcid: 'ORCID'
   activerecord:
     models:
       event: Event
@@ -53,24 +55,15 @@ en:
         surname: 'Last name'
       event:
         county: Region
-        presence:
-          online: Online
-          onsite: Face-to-face
-          hybrid: Hybrid
   about:
     registry: >
-      TeSS is a platform that was developed to provide a one-stop shop for trainers and trainees to discover
-      online information and content, including training materials, events and interactive tutorials.
-      For training providers, TeSS provides opportunities to promote training events and news, and to contribute
-      to a growing catalogue of materials; for trainers, the portal offers an environment for sharing materials
-      and event information; for trainees, it offers a convenient gateway via which to identify relevant training
-      events and resources, and to perform specific, guided analysis tasks via customised training workflows.
+      The Training Hub was established in 2023 to support, consolidate, and enable access to the SciLifeLab 
+      infrastructure’s knowledge, skills and expertise. 
     history: >
-      TeSS was originally developed as part of <a href='https://elixir-europe.org/' target='_blank'>ELIXIR</a>,
-      Europe's distributed infrastructure for life-science data. One of the goals of ELIXIR is to train research
-      scientists to better use available computational infrastructures to address critical research questions.
-      This requires access both to face-to-face training opportunities and to disparate training materials and resources,
-      currently dispersed across Europe.
+      We are building a portal where the Swedish life science community can find opportunities to gain 
+      relevant skills, and experts can find support in creating training that captures their knowledge.
+      To learn more about what we are planning, find our 2023-2028 Roadmap here.
+
     events: >
       Events in TeSS are defined as face-to-face or online training opportunities that have set start and end times.
       These primarily take the form of workshops, courses, webinars, etc.; but TeSS also collects information about
@@ -138,13 +131,6 @@ en:
     api_example_4: "/content_providers.json_api"
     api_example_5: "/workflows.json_api"
   us:
-    keys:
-      tess_club: TeSS Club
-      contact: Contact
-      team: The Team
-      funding: Funding
-      acknowledgements: Acknowledgments
-      cite: Cite us
     tess_club: >
       <p>Fortnightly meetings, hackathons, shared activities, open priority setting, open contribution to unite the
       community.</p>
@@ -161,8 +147,6 @@ en:
       <ul><li>Munazah Andrabi</li></ul>
       <h5>Software Engineering</h5>
       <ul><li>Finn Bacall</li><li>Ivan Kuzmin</li></ul>
-      <h5>Community Engagement</h5>
-      <ul><li>Alexander Botzki</li><li>Olivier Sand</li></ul>
       <h5>Past Members</h5>
       <ul>
         <li>Aleksandra Nenadic - Project Management/Software Engineering</li>
@@ -189,7 +173,7 @@ en:
         ).
       </li>
       </ul>
-    acknowledgements: >
+    acknowledge: >
       <p>The TeSS team would like to acknowledge the help of a number of groups and individuals, and thank them
          for useful discussions, feedback and assistance in developing TeSS - to name but a few:</p>
        <ul>
@@ -299,12 +283,28 @@ en:
       events and materials tabs. Alternatively click here:</p>
   home:
     welcome: |
-      How can <span class="text-primary">TeSS</span> help you?
+      Welcome to <span class="text-primary">SciLifeLab Training</span>
     subtitle: |
-      Search the portal for courses, events, videos, presentations, learning pathways, handbooks...<br>
-      All types of resources at all levels for leveraging <span class="text-primary">computational resources in the life sciences</span>.
+      Some text about SciLifeLab Training Hub<br>
+      And what we can help you with
+    newstuff: |
+      New stuff
+    stufftext: |
+      We are currently building here, check back later for exciting things! Meanwhile, check out some of the materials from previous courses here.
+    new: |
+      What's new
+    newtext: |
+      <li>Train-the-Trainer programme</li>
+      <li>Seminars</li>
+      <li>Other cool stuff</li>
+    emaillist: |
+      Email lists
+    emaillisttext: |
+      Interested to know more about our upcoming courses? Sign up to our <b>course newsletter</b>.<br><br>
+      Want to be kept in the loop about training and pedagogy? Sign up to our newsletter for <b>trainers</b>. <br>
+
     catalogue:
-      title: Browse the catalogue
+      title: Upcoming stuff
       link_text: Start browsing
       events: "Discover the latest training events and news from ELIXIR nodes and 3<sup>rd</sup>-party providers."
       materials: "Browse the catalogue of training materials offered by ELIXIR nodes and 3<sup>rd</sup>-party providers."
@@ -423,8 +423,6 @@ en:
       timezone: 'Select the appropriate timezone'
       title: 'Add a title for your training event.'
       url: 'Enter a valid URL for the event landing page.'
-    long: 'Long events'
-    pick_date: 'Pick a range of dates for a better collection of events.'
   materials:
     hints:
       authors: >
@@ -559,10 +557,6 @@ en:
     404: "The requested page could not be found - you may have mistyped the address or the page may have moved (404 Not Found)."
   warnings:
     link_broken: TeSS has been unable to access this %{resource_type}'s URL since %{fail_date} - the page may have been moved.
-    archived: This %{resource_type} has been archived, its content may no longer be relevant.
   footer:
     eu_funding: >
       TeSS has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. <a href="https://cordis.europa.eu/project/rcn/198519_en.html", target="_blank">676559</a>.
-  time:
-    formats:
-      time_short: "%H:%M"

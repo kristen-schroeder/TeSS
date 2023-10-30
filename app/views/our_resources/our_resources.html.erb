@@ -1,0 +1,32 @@
+<div class="container">
+  <h3 style="text-align: center;">What can we help you with?</h3>
+  <br>
+  <div class="row">
+    <%= link_to guides_path do %>
+      <div class="col-md-4">
+        <div class="text-box">
+          <h3 style="text-align: center;"> <%= content_tag(:span, "Content Guides") %> </h3>
+          <p>Browse our guidelines for sharing knowledge in various formats</p>
+        </div>
+      </div>
+    <% end %>
+
+    <%= link_to pedagogic_path do %>
+      <div class="col-md-4">
+        <div class="text-box">
+          <h3 style="text-align: center;"><%= content_tag(:span, "Pedagogic Support") %></h3>
+          <p>Resources to level up your skill as a trainer</p>
+        </div>
+      </div>
+    <% end %>
+
+    <%= link_to creation_path do %>
+      <div class="col-md-4">
+        <div class="text-box">
+          <h3 style="text-align: center;"><%= content_tag(:span, "Course Creation") %></h3>
+          <p>Holding a course? Get in touch for consulting and development help</p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
