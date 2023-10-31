@@ -283,8 +283,13 @@ en:
       events and materials tabs. Alternatively click here:</p>
   home:
     welcome: |
-      Welcome to <span class="text-primary">SciLifeLab Training</span>
+      Welcome to <span class="text-primary">SciLifeLab Training Hub</span>
     subtitle: |
+      The Training Hub was established in 2023 to support, consolidate, and enable access to the SciLifeLab 
+      infrastructure’s knowledge, skills and expertise.<br>
+      We are building a portal where the Swedish life science community can find opportunities to gain relevant skills, 
+      and experts can find support in creating training that captures their knowledge.<br>
+
       Some text about SciLifeLab Training Hub<br>
       And what we can help you with
     newstuff: |

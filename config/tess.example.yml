@@ -20,8 +20,10 @@ default: &default
     title: 'TeSS (Training eSupport System)'
     title_short: TeSS
     favicon: elixir/favicon.png
-    logo: elixir/elixir-tess.svg
-    logo_alt: 'Training eSupport System'
+    #logo: elixir/elixir-tess.svg
+    logo: scilifelab/SciLifeLab_symbol_green_bg.png
+    #logo_alt: 'Training eSupport System'
+    logo_alt: 'Training Hub'
     logo_open_graph: ''
     logo_email: ''
     # Colours of the SVG icons used throughout TeSS, requires `rake assets:precompile` if changed
