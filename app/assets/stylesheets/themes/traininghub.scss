@@ -102,59 +102,56 @@ $input-border: $gray-light;
 $input-border-focus: $secondary-color;
 
 // Navbar
-$navbar-height: 100px;
+$navbar-height: 85px;
 $navbar-default-color: $gray-darker;
-$navbar-default-bg: $accent-color;
+$navbar-default-bg: rgba($accent-color, 0.5);
 $navbar-default-border: transparent;
 $navbar-default-link-color: $gray-darker;
 $navbar-default-link-hover-color: white;
 $navbar-default-link-active-color: white;
 
+.navbar {
+  font-weight: bold;
+}
 
 //header, adding SciLifelab specific menu bar item
 header-container {
   position: relative;
 }
 
-#main-container {
-  margin-top: 30vh;
-}
 
 #header-container::before {
-  background-image: asset-url('scilifelab/Fasad-SciLifeLab-Solna-cut.png'); 
-  background-size: 100%;
+  background-image: asset-url('scilifelab/Fasad-SciLifeLab-Solna-2022-2-1-scaled-cut.jpeg');
+  background-size: cover;
   background-position: center;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 30vh; /* Covers the top half of the #header-container */
+  height: 85px; /* Covers the #header-container */
   z-index: -1; /* Puts it behind the content */
   bottom: 0;
 }
 
-#header-container::after {
-  content: "SciLifeLab Training Portal";
-  background-color: white;
-  opacity: .8;
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translateX(-50%);
-//  right: 0vw;
-  width: 100vw;
-  height: 10vh; /* Covers the top half of the #header-container */
-  z-index: 0; /* Puts it behind the content */
-  bottom: 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $secondary-color;
-  font-size: 35px;
-  font-weight: bold;
+.welcome-text {
+  background-color: $secondary-color;
+  margin-top: -53px;
+  height: 80px;
+  width: 100vw; 
+  margin-left: calc((-100vw + 100%) / 2);
+  margin-right: calc((-100vw + 100%) / 2);
+  margin-bottom: 150px;;
+
+  h3 {
+    margin-top: 0px;
+    color: white;
+  }
+  h2 {
+    font-weight: lighter;
+  }
 }
+
 
 text-boxes-container {
   display: inline-flex;

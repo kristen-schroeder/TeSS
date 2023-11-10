@@ -5,7 +5,7 @@ en:
       long: About
     events:
       short: Events
-      long: Events
+      long: Training Courses
     materials:
       short: Materials
       long: Training materials
@@ -29,7 +29,7 @@ en:
       long: Nodes
     our_resources:
       short: Resources
-      long: Our Resources
+      long: Resources
   pundit:
     default: 'You are not authorised to perform this action.'
     material_policy:
@@ -283,10 +283,9 @@ en:
       events and materials tabs. Alternatively click here:</p>
   home:
     welcome: |
-      Welcome to <span class="text-primary">SciLifeLab Training</span>
+      Welcome to the SciLifeLab Training Portal
     subtitle: |
-      Some text about SciLifeLab Training Hub<br>
-      And what we can help you with
+      What are you looking for?
     newstuff: |
       New stuff
     stufftext: |
@@ -304,13 +303,14 @@ en:
       Want to be kept in the loop about training and pedagogy? Sign up to our newsletter for <b>trainers</b>. <br>
 
     catalogue:
-      title: Upcoming stuff
+      title: ""
       link_text: Start browsing
-      events: "Discover the latest training events and news from ELIXIR nodes and 3<sup>rd</sup>-party providers."
+      events: "Browse training available from SciLifeLab and the EU life science community"
       materials: "Browse the catalogue of training materials offered by ELIXIR nodes and 3<sup>rd</sup>-party providers."
       workflows: "Create training workflows to visualise learning steps and link to resources specific to your training needs."
       providers: "Browse training providers to discover training resources they offer and follow links to their materials and courses."
       trainers: "Browse a directory of trainers based on their skills and expertise."
+      our_resources: "Access resources for instructors and training providers"
     providers:
       title: Providers
       content: |

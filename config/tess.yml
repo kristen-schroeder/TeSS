@@ -17,9 +17,9 @@ default: &default
     - !ruby/regexp '/bad-domain\.example/'
   site:
     title: 'SciLifeLab Training Portal'
-    title_short: Training Hub
+    title_short: SciLifeLab Training
     favicon: scilifelab/SciLifeLab_symbol_green.png
-    logo: scilifelab/SciLifeLab_symbol_green_bg.png
+    logo: scilifelab/SciLifeLab_symbol_NEG.png
     logo_alt: 'Training Hub Portal'
     logo_open_graph: ''
     logo_email: ''
