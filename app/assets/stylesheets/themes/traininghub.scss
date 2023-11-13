@@ -161,15 +161,46 @@ text-boxes-container {
 .text-box {
  // flex: 1; /* Each text box takes equal width */
   padding: 20px; /* Add spacing between text boxes */
-  border: 2px solid #ccc; /* Optional: Add borders for separation */
+  border: 1px solid #ccc; /* Optional: Add borders for separation */
   margin: 5px; /* Optional: Add margin around each text box */
-  border-radius: 25px;
   height: 300px;
-  font-size: 20px;
-  color: black;
-  
+  font-size: 27px;
+  color: white;
+  background-color: $primary-color;
 }
 
+.white-box {
+  position: absolute;
+  bottom: 35px;
+  left: 3px;
+  width: 80%; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 10px;
+}
+
+.white-box p {
+  margin-left: 10px;
+}
+
+.icon-circle {
+  width: 70px; /* Adjust the size of the circle */
+  height: 70px; /* Adjust the size of the circle */
+  background-color: $accent-color; /* Replace with your desired color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -25px; /* Adjust the margin as needed */
+}
+
+.icon-circle img {
+  width: 40px; /* Adjust the width of the icon as needed */
+  height: 40px; /* Adjust the height of the icon as needed */
+}
 
 
 // Breadcrumb

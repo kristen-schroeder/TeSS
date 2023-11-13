@@ -21,7 +21,8 @@ Rails.application.routes.draw do
   get 'our_resources' => 'our_resources#our_resources', as: 'our_resources'
   get 'our_resources/guides' => 'our_resources#guides', as: 'guides'
   get 'our_resources/pedagogic_support' => 'our_resources#pedagogic_support', as: 'pedagogic'
-  get 'our_resources/course_creation' => 'our_resources#course_creation', as: 'creation'
+  get 'our_resources/trainer_community' => 'our_resources#trainer_community', as: 'community'
+  get 'our_resources/fair_training' => 'our_resources#fair_training', as: 'fair'
 
   get 'privacy' => 'static#privacy', as: 'privacy'
 
@@ -119,6 +120,8 @@ Rails.application.routes.draw do
       get :count
     end
   end
+
+  resources :our_resources, only: [:index]
 
   get 'elearning_materials' => 'materials#index', defaults: { 'resource_type' => 'e-learning' }
 
